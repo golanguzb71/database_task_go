@@ -1,0 +1,10 @@
+- Each table is assigned a minimum number of fields and DO NOT CHANGE THE NAME OF TABLES.
+- You have to add relations according to the task
+- You can create another tables
+- *one order one order_items always
+- There is "example_data" to use or to get sample
+1. branches
+2. users 
+3. products 
+4. orders 
+5. order_items 
