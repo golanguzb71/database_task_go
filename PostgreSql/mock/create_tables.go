@@ -28,14 +28,15 @@ CREATE TABLE orders
 (
     id           serial PRIMARY KEY,
     user_id      bigint references users (id) NOT NULL,
-    delivered_at timestamp                    NOT NULL
+    branch_id 	bigint references branch(id) NOT NULL ,
+    discount_price double precision NOT NULL
 );
 
 CREATE TABLE order_items
 (
     id         serial PRIMARY KEY,
     order_id   bigint references orders (id)  NOT Null,
-    product_id bigint references product (id) NOT NULL
+    product_id bigint references product (id) NOT NULL,
 );
 
 `
